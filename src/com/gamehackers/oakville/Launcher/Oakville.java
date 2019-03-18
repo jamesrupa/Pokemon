@@ -1,6 +1,6 @@
 package com.gamehackers.oakville.Launcher;
 
-import com.gamehackers.oakville.Display.Display;
+import com.gamehackers.oakville.Launcher.Game;
 
 public class Oakville {
     public static void main(String[] args) {
