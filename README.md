@@ -1,5 +1,5 @@
-# The Chronicle of Oakville
-**Java RPG Game**\
+# Pokemon
+**Java Pokemon Game**\
 *Created By James Rupa*
 
 ## Project Description
@@ -18,7 +18,6 @@ Or implementation you are working on to add on in the future
 ## Acknowledgments
 
 * https://www.youtube.com/user/CodeNMore/featured
-* http://www.davidvitas.com/portfolio/2016/5/12/rpg-music-pack
 * ADD MORE
 
 ## Contact Info

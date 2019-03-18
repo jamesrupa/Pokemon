@@ -132,7 +132,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552869025512" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552869818876" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -153,7 +153,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Oakville" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.gamehackers.oakville.Launcher.Oakville" />
+      <option name="MAIN_CLASS_NAME" value="com.jamesrupa.pokemon.Launcher.Pokemon" />
       <module name="Oakville" />
       <method v="2">
         <option name="Make" enabled="true" />
