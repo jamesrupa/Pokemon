@@ -7,7 +7,8 @@ public class Pokemon {
         // MAIN CLASS
         // FIND DIMENSIONS TO DISPLAY
         Game game = new Game("Pokémon", 1400, 746);
-        game.start();
         Sound.startscreen.loop();
+        game.start();
+
     }
 }

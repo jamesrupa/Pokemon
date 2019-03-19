@@ -8,7 +8,7 @@ public class Sound {
 
     private Clip clip;
 
-    public static Sound startscreen = new Sound("/audio/~Opening~.wav");
+    public static Sound startscreen = new Sound("/audio/Opening.wav");
 
     public Sound (String fileName) {
         try{
