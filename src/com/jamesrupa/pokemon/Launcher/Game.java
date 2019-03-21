@@ -1,11 +1,15 @@
 package com.jamesrupa.pokemon.Launcher;
 
 import com.jamesrupa.pokemon.Display.Display;
+import com.jamesrupa.pokemon.GFX.ImageLoader;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
+import java.nio.BufferOverflowException;
 
 public class Game implements Runnable{
+
 
     // VARIABLES
     // Width, Height, and Title Variables
@@ -16,6 +20,7 @@ public class Game implements Runnable{
     private Display display;
 
     // Running Variables
+    // Thread == mini program
     private boolean running = false;
     private Thread thread;
 
@@ -23,12 +28,11 @@ public class Game implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
 
+
     public Game(String title, int width, int height) {
         this.title = title;
         this.width = width;
         this.height = height;
-
-        display = new Display(title, width, height);
     }
 
     private void init() {
@@ -39,6 +43,7 @@ public class Game implements Runnable{
 
     }
 
+
     // What Can Be Seen On Screen
     private void render() {
         bs = display.getCanvas().getBufferStrategy();
@@ -48,61 +53,72 @@ public class Game implements Runnable{
         }
         g = bs.getDrawGraphics();
         // Clear Screen
-        g.clearRect(0,0,width, height);
+        g.clearRect(0,0, width, height);
         // Draw Here
-        /*
 
-        */
+
+
         // End Drawing
         bs.show();
         g.dispose();
     }
+
 
     // BASIC GAME LOOP TO RUN THE GAME AND UPDATE IT
     public void run() {
 
         init();
 
-        // FPS
-        int fps = 30;
-        // Max Time for FPS Target - execute the FPS
-        double timePerTick = 1000000000 / fps;
-        // Amount of Time we have until we have to call the tick and render methods again
-        double delta = 0;
-        // current time of our computer
-        long now;
-        // last time since last running code
-        long lastTime = System.nanoTime();
-        // Just for FPS Counter
-        // FOR VISUAL
-        long timer = 0;
-        int ticks = 0;
+        //
+        int UPS = 30;
+        int FPS = 30;
+
+        // CONSTANT VARIABLES
+        long initialTime = System.nanoTime();
+        final double timeU = 1000000000 / UPS;
+        final double timeF = 1000000000 / FPS;
+        double deltaU = 0, deltaF = 0;
+        int frames = 0, ticks = 0;
+        long timer = System.currentTimeMillis();
 
         while(running) {
-            now = System.nanoTime();
-            delta += (now - lastTime) / timePerTick;
-            timer += now - lastTime;
-            lastTime = now;
 
-            if(delta >= 1) {
+            long currentTime = System.nanoTime();
+            deltaU += (currentTime - initialTime) / timeU;
+            deltaF += (currentTime - initialTime) / timeF;
+            initialTime = currentTime;
+
+            if (deltaU >= 1) {
                 tick();
                 render();
                 ticks++;
-                delta--;
+                deltaU--;
             }
 
+            if (deltaF >= 1) {
+                tick();
+                render();
+                frames++;
+                deltaF--;
+            }
+
+            // CHANGE THIS TO MAKE IT WORK
             if(timer >= 1000000000) {
-                System.out.println("FPS: " + ticks);
+                System.out.println("UPS: " + ticks);
+                System.out.println("FPS: " + frames);
+                frames = 0;
                 ticks = 0;
                 timer = 0;
             }
+
         }
 
         stop();
     }
 
+
     public synchronized void start() {
-        if(running)
+        if (running)
             return;
         running = true;
         thread = new Thread(this);
@@ -111,8 +127,9 @@ public class Game implements Runnable{
 
     // THESE TWO METHODS WORK TOGETHER
 
+
     public synchronized void stop() {
-        if(running)
+        if (!running)
             return;
         running = false;
         try {

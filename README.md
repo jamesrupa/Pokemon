@@ -8,12 +8,15 @@ One paragraph of the project's description goes right here
 
 ## How To Use The Project
 
-Describe how to use the project and include any special instructions
+The project was coded entirely on IntelliJ.\
+To use the project you must:
+1.
 
 ## Future Plans
 
-Include any future plans you may want with the current project\
-Or implementation you are working on to add on in the future
+* Get this project to actually work
+* Hopefully recreate a good majority of the game and the necessary components that are used
+* Learn everything and how to use Java so I can basically create anything I want after
 
 ## Acknowledgments
 
