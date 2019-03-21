@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab04d698-d875-47c7-9e70-1983dc5d2ac6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Oakville.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Oakville.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Display/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Display/Display.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Launcher/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Launcher/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Launcher/Pokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Launcher/Pokemon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Sound/Sound$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Sound/Sound$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Sound/Sound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/States/GameState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/States/InventoryState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/States/MapState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/States/MenuState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/States/SettingState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/audio/~Ending~.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/tilesheets/Game Boy Advance - Pokemon FireRed LeafGreen - Pallet Town.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/tilesheets/Game Boy Advance - Pokemon FireRed LeafGreen - Tileset 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/tilesheets/Game Boy Advance - Pokemon FireRed LeafGreen - Tileset 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/tilesheets/Game Boy Advance - Pokemon FireRed LeafGreen - Tileset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/tilesheets/emerald.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/tilesheets/firered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/tilesheets/fullpokemontilesheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Display/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Display/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Sound/Sound.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/GameState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/InventoryState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/MapState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/MenuState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/SettingState.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,12 +17,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="521">
-                  <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+                <state relative-caret-position="-181">
+                  <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#897#898#0" expanded="true" />
-                    <element signature="e#956#957#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -70,7 +38,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/ImageLoader.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -124,7 +92,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,6 +122,20 @@
               <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="textures" type="462c0819:PsiDirectoryNode" />
               <item name="screens" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pokemon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pokemon" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+              <item name="spritesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pokemon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pokemon" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+              <item name="tilesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pokemon" type="b2602c69:ProjectViewProjectNode" />
@@ -192,11 +173,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553132452630" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553132453645" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -239,9 +221,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15018316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15201466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -250,7 +231,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -296,13 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -312,6 +286,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/textures/tilesheets/full-tilesheet.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -325,12 +306,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="-181">
+          <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
           </folding>
         </state>
       </provider>
