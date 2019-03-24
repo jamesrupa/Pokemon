@@ -1,6 +1,7 @@
 package com.jamesrupa.pokemon.Launcher;
 
 import com.jamesrupa.pokemon.Display.Display;
+import com.jamesrupa.pokemon.GFX.Assets;
 import com.jamesrupa.pokemon.GFX.ImageLoader;
 import com.jamesrupa.pokemon.GFX.SpriteSheet;
 
@@ -28,8 +29,7 @@ public class Game implements Runnable{
     // Buffer + Graphics Variables
     private BufferStrategy bs;
     private Graphics g;
-    private BufferedImage test;
-    private SpriteSheet sheet;
+
 
 
     public Game(String title, int width, int height) {
@@ -40,8 +40,7 @@ public class Game implements Runnable{
 
     private void init() {
         display = new Display(title, width, height);
-        test = ImageLoader.loadImage("/textures/spritesheets/main.png");
-        sheet = new SpriteSheet(test);
+        Assets.init();
     }
 
     private void tick() {
@@ -61,7 +60,7 @@ public class Game implements Runnable{
         g.clearRect(0,0, width, height);
         // Draw Here
 
-        g.drawImage(sheet.crop(0,0,62,68),0,0,null);
+        
 
         // End Drawing
         bs.show();
