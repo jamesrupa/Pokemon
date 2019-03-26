@@ -30,6 +30,8 @@ public class Game implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
 
+    int x = 0;
+
 
 
     public Game(String title, int width, int height) {
@@ -44,7 +46,7 @@ public class Game implements Runnable{
     }
 
     private void tick() {
-
+        x++;
     }
 
 
@@ -60,7 +62,7 @@ public class Game implements Runnable{
         g.clearRect(0,0, width, height);
         // Draw Here
 
-        
+        g.drawImage(Assets.playerStill,x,0,null);
 
         // End Drawing
         bs.show();
@@ -83,13 +85,14 @@ public class Game implements Runnable{
         final double timeF = 1000000000 / FPS;
         double deltaU = 0, deltaF = 0;
         int frames = 0, ticks = 0;
-        long timer = System.currentTimeMillis();
+        long timer = 0;
 
         while(running) {
 
             long currentTime = System.nanoTime();
             deltaU += (currentTime - initialTime) / timeU;
             deltaF += (currentTime - initialTime) / timeF;
+            timer += currentTime - initialTime;
             initialTime = currentTime;
 
             if (deltaU >= 1) {
@@ -106,12 +109,11 @@ public class Game implements Runnable{
                 deltaF--;
             }
 
-            // CHANGE THIS TO MAKE IT WORK
             if(timer >= 1000000000) {
                 System.out.println("UPS: " + ticks);
-                System.out.println("FPS: " + frames);
-                frames = 0;
+                System.out.println("FPS: " + frames + "\n");
                 ticks = 0;
+                frames = 0;
                 timer = 0;
             }
 
