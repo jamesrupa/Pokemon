@@ -4,6 +4,9 @@ import com.jamesrupa.pokemon.Display.Display;
 import com.jamesrupa.pokemon.GFX.Assets;
 import com.jamesrupa.pokemon.GFX.ImageLoader;
 import com.jamesrupa.pokemon.GFX.SpriteSheet;
+import com.jamesrupa.pokemon.States.GameState;
+import com.jamesrupa.pokemon.States.State;
+import com.jamesrupa.pokemon.States.TitleState;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
@@ -30,7 +33,9 @@ public class Game implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
 
-    int x = 0;
+    // STATES
+    private State gameState;
+    private State titleState;
 
 
 
@@ -43,10 +48,16 @@ public class Game implements Runnable{
     private void init() {
         display = new Display(title, width, height);
         Assets.init();
+
+        gameState = new GameState();
+        titleState = new TitleState();
+        State.setState(titleState);
     }
 
     private void tick() {
-        x++;
+        if (State.getState() != null) {
+            State.getState().tick();
+        }
     }
 
 
@@ -62,7 +73,9 @@ public class Game implements Runnable{
         g.clearRect(0,0, width, height);
         // Draw Here
 
-        g.drawImage(Assets.playerStill,x,0,null);
+        if (State.getState() != null) {
+            State.getState().render(g);
+        }
 
         // End Drawing
         bs.show();
