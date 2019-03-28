@@ -3,10 +3,124 @@
   <component name="ChangeListManager">
     <list default="true" id="ab04d698-d875-47c7-9e70-1983dc5d2ac6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Display/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Display/Display.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Launcher/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Launcher/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/screens/startscreen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/META-INF/Oakville V.2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/Display/Display.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/GFX/ImageLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/Launcher/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/Launcher/Oakville.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/Sound/Sound.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/States/GameState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/States/InventoryState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/States/MapState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/States/MenuState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville V.2/com/gamehackers/oakville/States/SettingState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/META-INF/Oakville.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Bad Luck.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Battle (VS Deoxys).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Battle (VS Gym Leader) (RS).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Battle (VS Gym Leader).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Battle (VS Legendary Pokemon).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Battle (VS Mewtwo).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Battle (VS Trainer) (RS).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Battle (VS Trainer).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Battle (VS Wild Pokemon).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Celadon City Theme.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Cinnabar Island Theme.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Cycling.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Deoxys' Appearance.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Dodrio's Green Power.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Ending.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Epilogue.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Evolution.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Badge Get.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Berry Get (RS).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Big Success!.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Evolution Congratulations.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Item Get 1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Item Get 2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Pokedex Evaluation.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Pokemon Acquisition.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Pokemon Captured.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare Success!.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fanfare TM_HM Get (RS).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Forget Skill.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Fuchsia City Theme.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Game Corner.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Game Explanation (Part 1).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Game Explanation (Part 2).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Game Explanation (Part 3).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Game Freak Logo.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Guidance.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Induction Into the Hall of Fame.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Jigglypuff's Song.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Jumping With Mini Pokemon.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Lavender Town Theme.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Mt. Moon.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Mysterious Presnt.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Oak Research Institute.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Opening Demo.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Opening.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pallet Town Theme.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pewter City Theme.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/PokeFlute.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pokemon Center.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pokemon Gym.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pokemon Institute (RS).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pokemon Mansion.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pokemon Network Center.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pokemon Print.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pokemon Recovery (Unused).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pokemon Recovery.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Pokemon Tower.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Prof. Oak.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Rival Appears (No Intro).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Rival Appears.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Road to Cerulean City - From Mt. Moon.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Road to Fuchsia City - From Lavender Town.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Road to Viridian City - From Pallet Town.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/S.S. Anne.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Sevii Islands - Floe &amp; Chrono Islands.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Sevii Islands - Fortune &amp; Quest Islands.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Sevii Islands.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Silph Co..wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Surfing.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Teach TV Menu.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Team Rocket Hideout.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Tense Competition!.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/The Last Battle (VS Rival).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/The Last Road.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Trainer Appears (Bad Guys Version).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Trainer Appears (Boy Version).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Trainer Appears (Girl Version).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Union Room.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Unknown Jingle.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Vermilion City Theme.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Victory (VS Gym Leader).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Victory (VS Trainer).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Victory (VS Wild Pokemon) (No Intro).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Victory (VS Wild Pokemon).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Viridian Forest.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/audio/Welcome to the World of Pokemon!.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Display/Display.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/GFX/Assets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/GFX/ImageLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/GFX/SpriteSheet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Launcher/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/com/jamesrupa/pokemon/Launcher/Pokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/map/Game Boy Advance - Pokemon FireRed LeafGreen - Pallet Town.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/map/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/screens/Title-Screen.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/screens/startscreen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/spritesheets/Game Boy Advance - Pokemon FireRed LeafGreen - Hero &amp; Heroine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/spritesheets/main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/spritesheets/npc-char.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/spritesheets/playerA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/spritesheets/playerB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/spritesheets/playerC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/spritesheets/playerD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Oakville/textures/tilesheets/full-tilesheet.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/State.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+            <state relative-caret-position="-361">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,22 +143,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/TitleState.java">
+        <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="81" selection-start-line="22" selection-start-column="81" selection-end-line="22" selection-end-column="81" />
+            <state relative-caret-position="60">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="e#218#219#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java">
+        <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -79,14 +196,15 @@
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/SpriteSheet.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/Assets.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/GameState.java" />
-        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/State.java" />
-        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java" />
-        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/TitleState.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Display/Display.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/TitleState.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/State.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Input/KeyManager.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -98,7 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,15 +298,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553563260465" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553738388453" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
@@ -228,9 +347,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1971917" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1996337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -239,7 +357,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -310,23 +428,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Display/Display.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/textures/screens/startscreen.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/TitleState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -340,30 +476,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/TitleState.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Input/KeyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="81" selection-start-line="22" selection-start-column="81" selection-end-line="22" selection-end-column="81" />
+        <state relative-caret-position="840">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/textures/screens/startscreen.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+        <state relative-caret-position="-361">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

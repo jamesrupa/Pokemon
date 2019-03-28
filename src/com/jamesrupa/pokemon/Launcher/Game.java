@@ -2,16 +2,12 @@ package com.jamesrupa.pokemon.Launcher;
 
 import com.jamesrupa.pokemon.Display.Display;
 import com.jamesrupa.pokemon.GFX.Assets;
-import com.jamesrupa.pokemon.GFX.ImageLoader;
-import com.jamesrupa.pokemon.GFX.SpriteSheet;
 import com.jamesrupa.pokemon.States.GameState;
 import com.jamesrupa.pokemon.States.State;
 import com.jamesrupa.pokemon.States.TitleState;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
-import java.awt.image.BufferedImage;
-import java.nio.BufferOverflowException;
 
 public class Game implements Runnable{
 
@@ -39,6 +35,7 @@ public class Game implements Runnable{
 
 
 
+
     public Game(String title, int width, int height) {
         this.title = title;
         this.width = width;
@@ -55,6 +52,7 @@ public class Game implements Runnable{
     }
 
     private void tick() {
+
         if (State.getState() != null) {
             State.getState().tick();
         }

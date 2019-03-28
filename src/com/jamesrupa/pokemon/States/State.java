@@ -14,8 +14,7 @@ public abstract class State {
         return currentState;
     }
 
-
-    // CLASSES
+    // METHODS
     public abstract void tick();
     public abstract void render(Graphics g);
 }
