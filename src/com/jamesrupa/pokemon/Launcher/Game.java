@@ -2,16 +2,15 @@ package com.jamesrupa.pokemon.Launcher;
 
 import com.jamesrupa.pokemon.Display.Display;
 import com.jamesrupa.pokemon.GFX.Assets;
-import com.jamesrupa.pokemon.States.GameState;
-import com.jamesrupa.pokemon.States.State;
-import com.jamesrupa.pokemon.States.TitleState;
+import com.jamesrupa.pokemon.States.*;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 
-public class Game implements Runnable{
+public class Game implements Runnable {
 
 
+    public static Object getClock;
     // VARIABLES
     // Width, Height, and Title Variables
     public int width, height;
@@ -24,31 +23,36 @@ public class Game implements Runnable{
     // Thread == mini program
     private boolean running = false;
     private Thread thread;
+    private Handler handler;
 
     // Buffer + Graphics Variables
     private BufferStrategy bs;
     private Graphics g;
 
     // STATES
-    private State gameState;
-    private State titleState;
+    public State splashscreenState;
+    public State gamefreakState;
+    public State titleState;
+    public State gameState;
+    public State settingState;
 
 
-
-
-    public Game(String title, int width, int height) {
+    public Game(String title,int width,int height) {
         this.title = title;
         this.width = width;
         this.height = height;
     }
 
     private void init() {
-        display = new Display(title, width, height);
+        display = new Display(title,width,height);
         Assets.init();
 
-        gameState = new GameState();
-        titleState = new TitleState();
-        State.setState(titleState);
+        splashscreenState = new SplashScreenState(handler);
+        gamefreakState = new GameFreakState(handler);
+        titleState = new TitleState(handler);
+        gameState = new GameState(handler);
+        settingState = new SettingState(handler);
+        State.setState(splashscreenState);
     }
 
     private void tick() {
@@ -62,13 +66,13 @@ public class Game implements Runnable{
     // What Can Be Seen On Screen
     private void render() {
         bs = display.getCanvas().getBufferStrategy();
-        if(bs == null) {
+        if (bs == null) {
             display.getCanvas().createBufferStrategy(3);
             return;
         }
         g = bs.getDrawGraphics();
         // Clear Screen
-        g.clearRect(0,0, width, height);
+        g.clearRect(0,0,width,height);
         // Draw Here
 
         if (State.getState() != null) {
@@ -98,7 +102,8 @@ public class Game implements Runnable{
         int frames = 0, ticks = 0;
         long timer = 0;
 
-        while(running) {
+
+        while (running) {
 
             long currentTime = System.nanoTime();
             deltaU += (currentTime - initialTime) / timeU;
@@ -120,7 +125,7 @@ public class Game implements Runnable{
                 deltaF--;
             }
 
-            if(timer >= 1000000000) {
+            if (timer >= 1000000000) {
                 System.out.println("UPS: " + ticks);
                 System.out.println("FPS: " + frames + "\n");
                 ticks = 0;
@@ -133,6 +138,13 @@ public class Game implements Runnable{
         stop();
     }
 
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
 
     public synchronized void start() {
         if (running)
@@ -143,7 +155,6 @@ public class Game implements Runnable{
     }
 
     // THESE TWO METHODS WORK TOGETHER
-
 
     public synchronized void stop() {
         if (!running)
