@@ -2,6 +2,7 @@ package com.jamesrupa.pokemon.Launcher;
 
 import com.jamesrupa.pokemon.Display.Display;
 import com.jamesrupa.pokemon.GFX.Assets;
+import com.jamesrupa.pokemon.Input.KeyManager;
 import com.jamesrupa.pokemon.States.*;
 
 import java.awt.*;
@@ -9,8 +10,6 @@ import java.awt.image.BufferStrategy;
 
 public class Game implements Runnable {
 
-
-    public static Object getClock;
     // VARIABLES
     // Width, Height, and Title Variables
     public int width, height;
@@ -24,6 +23,7 @@ public class Game implements Runnable {
     private boolean running = false;
     private Thread thread;
     private Handler handler;
+    public int clock;
 
     // Buffer + Graphics Variables
     private BufferStrategy bs;
@@ -36,16 +36,24 @@ public class Game implements Runnable {
     public State gameState;
     public State settingState;
 
+    // INPUT
+    private KeyManager keyManager;
+
 
     public Game(String title,int width,int height) {
         this.title = title;
         this.width = width;
         this.height = height;
+        keyManager = new KeyManager();
     }
 
     private void init() {
         display = new Display(title,width,height);
+        display.getFrame().addKeyListener(keyManager);
+
         Assets.init();
+
+        handler = new Handler(this);
 
         splashscreenState = new SplashScreenState(handler);
         gamefreakState = new GameFreakState(handler);
@@ -56,6 +64,7 @@ public class Game implements Runnable {
     }
 
     private void tick() {
+        keyManager.tick();
 
         if (State.getState() != null) {
             State.getState().tick();
@@ -113,20 +122,20 @@ public class Game implements Runnable {
 
             if (deltaU >= 1) {
                 tick();
-                render();
                 ticks++;
                 deltaU--;
             }
 
             if (deltaF >= 1) {
-                tick();
                 render();
                 frames++;
+                clock++;
                 deltaF--;
             }
 
             if (timer >= 1000000000) {
                 System.out.println("UPS: " + ticks);
+                System.out.println("CLOCK: " + clock);
                 System.out.println("FPS: " + frames + "\n");
                 ticks = 0;
                 frames = 0;
@@ -136,6 +145,14 @@ public class Game implements Runnable {
         }
 
         stop();
+    }
+
+    public KeyManager getKeyManager() {
+        return keyManager;
+    }
+
+    public int getClock() {
+        return clock;
     }
 
     public int getWidth() {
@@ -166,4 +183,5 @@ public class Game implements Runnable {
             e.printStackTrace();
         }
     }
+
 }

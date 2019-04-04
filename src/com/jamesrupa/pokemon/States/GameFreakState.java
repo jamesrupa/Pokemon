@@ -4,6 +4,7 @@ import com.jamesrupa.pokemon.Input.Audio;
 import com.jamesrupa.pokemon.Launcher.Handler;
 
 import javax.imageio.ImageIO;
+import javax.management.StandardEmitterMBean;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -17,6 +18,11 @@ public class GameFreakState extends State {
 
     public void tick() {
 
+        if (handler.getKeyManager().enterPressed() || (handler.getClock() == 300)) {
+            State.setState(handler.getGame().titleState);
+            Audio.splashscreen.stop();
+            Audio.titlescreen.loop();
+        }
     }
 
     public void render(Graphics g) {

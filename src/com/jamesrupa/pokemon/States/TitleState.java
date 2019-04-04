@@ -19,6 +19,10 @@ public class TitleState extends State {
 
     public void tick() {
 
+        if (handler.getKeyManager().enterPressed()) {
+            State.setState(handler.getGame().gameState);
+            Audio.titlescreen.stop();
+        }
     }
 
     public void render(Graphics g) {

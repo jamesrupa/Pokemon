@@ -17,6 +17,11 @@ public class SplashScreenState extends State {
     }
 
     public void tick() {
+
+        if (handler.getClock() == 60) {
+            State.setState(handler.getGame().gamefreakState);
+            Audio.splashscreen.play();
+        }
     }
 
     public void render(Graphics g) {
