@@ -33,6 +33,7 @@ public class Game implements Runnable {
     public State splashscreenState;
     public State gamefreakState;
     public State titleState;
+    public State demoState;
     public State gameState;
     public State settingState;
 
@@ -58,6 +59,7 @@ public class Game implements Runnable {
         splashscreenState = new SplashScreenState(handler);
         gamefreakState = new GameFreakState(handler);
         titleState = new TitleState(handler);
+        demoState = new DemoState(handler);
         gameState = new GameState(handler);
         settingState = new SettingState(handler);
         State.setState(splashscreenState);
@@ -129,14 +131,14 @@ public class Game implements Runnable {
             if (deltaF >= 1) {
                 render();
                 frames++;
-                clock++;
                 deltaF--;
             }
 
             if (timer >= 1000000000) {
+                clock++;
                 System.out.println("UPS: " + ticks);
-                System.out.println("CLOCK: " + clock);
-                System.out.println("FPS: " + frames + "\n");
+                System.out.println("FPS: " + frames);
+                System.out.println("CLOCK: " + clock + "\n");
                 ticks = 0;
                 frames = 0;
                 timer = 0;

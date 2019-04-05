@@ -31,7 +31,7 @@ public class TitleState extends State {
         try {
             titlescreen = ImageIO.read(new File("res/textures/screens/titlescreen.png"));
         } catch (IOException e) {
-            System.out.println("Title Screen Is Broken...");
+            System.out.println("TitleScreen Is Broken...");
         }
         g.drawImage(titlescreen,0,0,null);
 

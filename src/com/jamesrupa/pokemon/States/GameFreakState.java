@@ -18,10 +18,10 @@ public class GameFreakState extends State {
 
     public void tick() {
 
-        if (handler.getKeyManager().enterPressed() || (handler.getClock() == 300)) {
-            State.setState(handler.getGame().titleState);
+        if (handler.getKeyManager().enterPressed() || (handler.getClock() == 10)) {
+            State.setState(handler.getGame().demoState);
             Audio.splashscreen.stop();
-            Audio.titlescreen.loop();
+            Audio.demoscreen.play();
         }
     }
 
@@ -30,9 +30,9 @@ public class GameFreakState extends State {
         try {
             gamefreak = ImageIO.read(new File("res/textures/screens/gamefreak.png"));
         } catch (IOException e) {
-            System.out.println("Title Screen Is Broken...");
+            System.out.println("LogoScreen Is Broken...");
         }
-        g.drawImage(gamefreak,0,0,null);
+        g.drawImage(gamefreak,-25,0,null);
 
     }
 }

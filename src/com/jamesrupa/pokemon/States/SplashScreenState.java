@@ -18,7 +18,7 @@ public class SplashScreenState extends State {
 
     public void tick() {
 
-        if (handler.getClock() == 60) {
+        if (handler.getClock() == 2) {
             State.setState(handler.getGame().gamefreakState);
             Audio.splashscreen.play();
         }
@@ -27,9 +27,9 @@ public class SplashScreenState extends State {
     public void render(Graphics g) {
         BufferedImage splashscreen = null;
         try {
-            splashscreen = ImageIO.read(new File("res/textures/screens/pokemon.png"));
+            splashscreen = ImageIO.read(new File("res/textures/screens/splashscreen.png"));
         } catch (IOException e) {
-            System.out.println("Title Screen Is Broken...");
+            System.out.println("SplashScreen Is Broken...");
         }
         g.drawImage(splashscreen,0,0,null);
     }
