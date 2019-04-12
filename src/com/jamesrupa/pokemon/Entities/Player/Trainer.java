@@ -7,23 +7,27 @@ import java.awt.*;
 
 public class Trainer extends Player {
 
+    public static final float PLAYER_SPEED = 3.5f;
 
     public Trainer(Handler handler,float x,float y) {
         super(handler,x,y);
+        speed = PLAYER_SPEED;
+
     }
 
     public void tick() {
+
         if (handler.getKeyManager().up) {
-            y -= 3;
+            y -= speed;
         }
         if (handler.getKeyManager().down) {
-            y += 3;
+            y += speed;
         }
         if (handler.getKeyManager().left) {
-            x -= 3;
+            x -= speed;
         }
         if (handler.getKeyManager().right) {
-            x += 3;
+            x += speed;
         }
 
     }

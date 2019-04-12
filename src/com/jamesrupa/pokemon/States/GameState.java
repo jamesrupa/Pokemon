@@ -1,6 +1,7 @@
 package com.jamesrupa.pokemon.States;
 
 import com.jamesrupa.pokemon.Entities.Player.Trainer;
+import com.jamesrupa.pokemon.GFX.Assets;
 import com.jamesrupa.pokemon.Launcher.Handler;
 
 import java.awt.*;

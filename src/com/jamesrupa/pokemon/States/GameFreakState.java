@@ -1,6 +1,7 @@
 package com.jamesrupa.pokemon.States;
 
 import com.jamesrupa.pokemon.Input.Audio;
+import com.jamesrupa.pokemon.Launcher.Game;
 import com.jamesrupa.pokemon.Launcher.Handler;
 
 import javax.imageio.ImageIO;
@@ -18,10 +19,13 @@ public class GameFreakState extends State {
 
     public void tick() {
 
-        if (handler.getKeyManager().enterPressed() || (handler.getClock() == 10)) {
-            State.setState(handler.getGame().demoState);
-            Audio.splashscreen.stop();
-            Audio.demoscreen.play();
+        if (handler.getClock() >= 3) {
+            if (handler.getClock() == 9 || handler.getKeyManager().enterPressed()) {
+                State.setState(handler.getGame().demoState);
+                Audio.splashscreen.stop();
+                Audio.demoscreen.play();
+                Game.clock = 0;
+            }
         }
     }
 

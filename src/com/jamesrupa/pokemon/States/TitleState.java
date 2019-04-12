@@ -1,6 +1,7 @@
 package com.jamesrupa.pokemon.States;
 
 import com.jamesrupa.pokemon.Input.Audio;
+import com.jamesrupa.pokemon.Launcher.Game;
 import com.jamesrupa.pokemon.Launcher.Handler;
 
 import javax.imageio.ImageIO;
@@ -18,10 +19,12 @@ public class TitleState extends State {
 
 
     public void tick() {
-
-        if (handler.getKeyManager().enterPressed()) {
-            State.setState(handler.getGame().gameState);
-            Audio.titlescreen.stop();
+        if (handler.getClock() >= 1) {
+            if (handler.getKeyManager().enterPressed()) {
+                State.setState(handler.getGame().gameState);
+                Audio.titlescreen.stop();
+                Game.clock = 0;
+            }
         }
     }
 

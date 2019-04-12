@@ -23,7 +23,7 @@ public class Game implements Runnable {
     private boolean running = false;
     private Thread thread;
     private Handler handler;
-    public int clock;
+    public static int clock;
 
     // Buffer + Graphics Variables
     private BufferStrategy bs;

@@ -1,6 +1,7 @@
 package com.jamesrupa.pokemon.States;
 
 import com.jamesrupa.pokemon.Input.Audio;
+import com.jamesrupa.pokemon.Launcher.Game;
 import com.jamesrupa.pokemon.Launcher.Handler;
 
 import javax.imageio.ImageIO;
@@ -17,10 +18,13 @@ public class DemoState extends State {
     }
 
     public void tick() {
-        if (handler.getClock() == 22 || handler.getKeyManager().enterPressed()) {
-            State.setState(handler.getGame().titleState);
-            Audio.demoscreen.stop();
-            Audio.titlescreen.loop();
+        if (handler.getClock() >= 1) {
+            if (handler.getClock() == 12 || handler.getKeyManager().enterPressed()) {
+                State.setState(handler.getGame().titleState);
+                Audio.demoscreen.stop();
+                Audio.titlescreen.loop();
+                Game.clock = 0;
+            }
         }
     }
 
