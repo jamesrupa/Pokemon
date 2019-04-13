@@ -9,8 +9,7 @@ import java.awt.image.BufferedImage;
 
 public class Trainer extends Player {
 
-    public static final float TRAINER_SPEED = 3.5f;
-    private static int clear = 0;
+    private static final float TRAINER_SPEED = 3.0f;
 
     // ANIMATIONS
     private PlayerAnimations animDown;
@@ -22,10 +21,10 @@ public class Trainer extends Player {
         super(handler,x,y,Player.DEFAULT_PLAYER_WIDTH,Player.DEFAULT_PLAYER_HEIGHT);
         speed = TRAINER_SPEED;
 
-        animDown = new PlayerAnimations(250, Assets.playerDown);
-        animUp = new PlayerAnimations(250, Assets.playerUp);
-        animLeft = new PlayerAnimations(250, Assets.playerLeft);
-        animRight = new PlayerAnimations(250, Assets.playerRight);
+        animDown = new PlayerAnimations(100, Assets.playerDown);
+        animUp = new PlayerAnimations(100, Assets.playerUp);
+        animLeft = new PlayerAnimations(100, Assets.playerLeft);
+        animRight = new PlayerAnimations(100, Assets.playerRight);
     }
 
     public void tick() {
@@ -35,29 +34,29 @@ public class Trainer extends Player {
         animRight.tick();
 
         getInput();
-        handler.getGameCamera().centerOnEntity(this);
+        move();
     }
 
     private void getInput() {
         xMove = 0;
         yMove = 0;
+        int clear = 0;
 
-
-        if(handler.getKeyManager().up) {
+        if(handler.getKeyManager().up || handler.getKeyManager().up1) {
             yMove += -speed;
             xMove = clear;
         }
-        if(handler.getKeyManager().down) {
+        if(handler.getKeyManager().down || handler.getKeyManager().down1) {
             yMove += speed;
             xMove = clear;
 
         }
-        if(handler.getKeyManager().left) {
+        if(handler.getKeyManager().left || handler.getKeyManager().left1) {
             xMove += -speed;
             yMove = clear;
 
         }
-        if(handler.getKeyManager().right) {
+        if(handler.getKeyManager().right || handler.getKeyManager().right1) {
             xMove += speed;
             yMove = clear;
 
@@ -65,8 +64,7 @@ public class Trainer extends Player {
     }
 
     public void render(Graphics g) {
-        g.drawImage(getCurrentAnimationFrame(), (int) (x - handler.getGameCamera().getxOffset()), (int) (y - handler.getGameCamera().getyOffset()),
-                width, height,null);
+        g.drawImage(getCurrentAnimationFrame(), (int) x, (int) y, width, height,null);
     }
 
     private BufferedImage getCurrentAnimationFrame() {
