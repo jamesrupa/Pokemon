@@ -6,7 +6,7 @@ import java.awt.event.KeyListener;
 public class KeyManager implements KeyListener {
 
     private boolean[] keys;
-    public boolean up, down, left, right, enter;
+    public boolean up, down, left, right, enter, menu;
 
     public KeyManager() {
         keys = new boolean[256];
@@ -14,6 +14,10 @@ public class KeyManager implements KeyListener {
 
     public boolean enterPressed() {
         return enter;
+    }
+
+    public boolean menuPressed() {
+        return menu;
     }
 
     public void tick() {
@@ -26,8 +30,12 @@ public class KeyManager implements KeyListener {
     public void keyPressed(KeyEvent e) {
         keys[e.getKeyCode()] = true;
 
-        if (e.getKeyCode() == KeyEvent.VK_ENTER){
+        if (e.getKeyCode() == KeyEvent.VK_ENTER) {
             enter = true;
+        }
+
+        if (e.getKeyCode() == KeyEvent.VK_M) {
+            menu = true;
         }
 
     }
@@ -37,6 +45,10 @@ public class KeyManager implements KeyListener {
 
         if (e.getKeyCode() == KeyEvent.VK_ENTER){
             enter = false;
+        }
+
+        if (e.getKeyCode() == KeyEvent.VK_M) {
+            menu = false;
         }
 
     }

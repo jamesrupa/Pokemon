@@ -1,5 +1,6 @@
 package com.jamesrupa.pokemon.Launcher;
 
+import com.jamesrupa.pokemon.GFX.GameCamera;
 import com.jamesrupa.pokemon.Input.KeyManager;
 
 public class Handler {
@@ -32,4 +33,9 @@ public class Handler {
     public int getClock() {
         return game.getClock();
     }
+
+    public GameCamera getGameCamera(){
+        return game.getGameCamera();
+    }
+
 }

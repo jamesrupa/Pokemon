@@ -2,6 +2,7 @@ package com.jamesrupa.pokemon.Launcher;
 
 import com.jamesrupa.pokemon.Display.Display;
 import com.jamesrupa.pokemon.GFX.Assets;
+import com.jamesrupa.pokemon.GFX.GameCamera;
 import com.jamesrupa.pokemon.Input.KeyManager;
 import com.jamesrupa.pokemon.States.*;
 
@@ -28,6 +29,7 @@ public class Game implements Runnable {
     // Buffer + Graphics Variables
     private BufferStrategy bs;
     private Graphics g;
+    private GameCamera gameCamera;
 
     // STATES
     public State splashscreenState;
@@ -55,6 +57,7 @@ public class Game implements Runnable {
         Assets.init();
 
         handler = new Handler(this);
+        gameCamera = new GameCamera(handler,0, 0);
 
         splashscreenState = new SplashScreenState(handler);
         gamefreakState = new GameFreakState(handler);
@@ -125,6 +128,7 @@ public class Game implements Runnable {
             if (deltaU >= 1) {
                 tick();
                 ticks++;
+
                 deltaU--;
             }
 
@@ -136,8 +140,7 @@ public class Game implements Runnable {
 
             if (timer >= 1000000000) {
                 clock++;
-                System.out.println("UPS: " + ticks);
-                System.out.println("FPS: " + frames);
+                System.out.println("UPS & FPS: " + frames);
                 System.out.println("CLOCK: " + clock + "\n");
                 ticks = 0;
                 frames = 0;
@@ -147,6 +150,10 @@ public class Game implements Runnable {
         }
 
         stop();
+    }
+
+    public GameCamera getGameCamera(){
+        return gameCamera;
     }
 
     public KeyManager getKeyManager() {

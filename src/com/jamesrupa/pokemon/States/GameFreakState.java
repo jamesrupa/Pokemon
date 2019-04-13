@@ -5,7 +5,6 @@ import com.jamesrupa.pokemon.Launcher.Game;
 import com.jamesrupa.pokemon.Launcher.Handler;
 
 import javax.imageio.ImageIO;
-import javax.management.StandardEmitterMBean;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -37,6 +36,5 @@ public class GameFreakState extends State {
             System.out.println("LogoScreen Is Broken...");
         }
         g.drawImage(gamefreak,-25,0,null);
-
     }
 }

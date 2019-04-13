@@ -20,11 +20,10 @@ public class Assets {
 
 
         // PLAYER -->
-        /*
-        PLAYERDOWN = new BufferedImage[4];
-        PLAYERUP = new BufferedImage[4];
-        PLAYERLEFT = new BufferedImage[4];
-        PLAYERRIGHT = new BufferedImage[4];
+        playerDown = new BufferedImage[4];
+        playerUp = new BufferedImage[4];
+        playerLeft = new BufferedImage[4];
+        playerRight = new BufferedImage[4];
 
         ////////////////////////////////////////////////////
         playerUp[0] = PLAYERUP.crop(0,0, cwidth, cheight);
@@ -47,7 +46,6 @@ public class Assets {
         playerRight[2] = PLAYERRIGHT.crop(cwidth * 2 ,0, cwidth, cheight);
         playerRight[3] = PLAYERRIGHT.crop(cwidth * 3, 0, cwidth, cheight);
         ////////////////////////////////////////////////////
-        */
         playerStill = PLAYERDOWN.crop(cwidth * 2,0, cwidth, cheight);
 
     }

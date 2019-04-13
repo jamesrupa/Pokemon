@@ -5,7 +5,6 @@ import com.jamesrupa.pokemon.Launcher.Game;
 import com.jamesrupa.pokemon.Launcher.Handler;
 
 import javax.imageio.ImageIO;
-import javax.swing.undo.AbstractUndoableEdit;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -23,6 +22,7 @@ public class TitleState extends State {
             if (handler.getKeyManager().enterPressed()) {
                 State.setState(handler.getGame().gameState);
                 Audio.titlescreen.stop();
+                Audio.pallettown.loop();
                 Game.clock = 0;
             }
         }

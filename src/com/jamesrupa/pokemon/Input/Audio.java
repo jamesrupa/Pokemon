@@ -11,6 +11,7 @@ public class Audio {
     public static Audio titlescreen = new Audio("/audio/Opening.wav");
     public static Audio splashscreen = new Audio("/audio/Game Freak Logo.wav");
     public static Audio demoscreen = new Audio("/audio/Opening Demo.wav");
+    public static Audio pallettown = new Audio("/audio/Pallet Town Theme.wav");
 
     public Audio (String fileName) {
         try{

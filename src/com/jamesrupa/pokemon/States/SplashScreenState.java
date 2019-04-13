@@ -1,7 +1,6 @@
 package com.jamesrupa.pokemon.States;
 
 import com.jamesrupa.pokemon.Input.Audio;
-import com.jamesrupa.pokemon.Launcher.Game;
 import com.jamesrupa.pokemon.Launcher.Handler;
 
 import javax.imageio.ImageIO;
