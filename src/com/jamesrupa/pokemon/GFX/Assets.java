@@ -6,10 +6,12 @@ public class Assets {
 
     // PLAYER HEIGHT AND WIDTH VARIABLES
     private static final int cwidth = 64, cheight = 64;
+    private static final int width = 16, height = 16;
 
     // BUFFERED IMAGE VARIABLES
     public static BufferedImage[] playerUp, playerDown, playerLeft, playerRight;
     public static BufferedImage playerStill;
+    public static BufferedImage grass1, grass2;
 
     public static void init() {
 
@@ -17,6 +19,7 @@ public class Assets {
         SpriteSheet PLAYERDOWN = new SpriteSheet(ImageLoader.loadImage("/textures/spritesheets/playerA.png"));
         SpriteSheet PLAYERLEFT = new SpriteSheet(ImageLoader.loadImage("/textures/spritesheets/playerB.png"));
         SpriteSheet PLAYERRIGHT = new SpriteSheet(ImageLoader.loadImage("/textures/spritesheets/playerC.png"));
+        SpriteSheet tiles = new SpriteSheet(ImageLoader.loadImage("/textures/tilesheets/full-tilesheet.png"));
 
 
         // PLAYER -->
@@ -47,6 +50,8 @@ public class Assets {
         playerRight[3] = PLAYERRIGHT.crop(cwidth * 3, 0, cwidth, cheight);
         ////////////////////////////////////////////////////
         playerStill = PLAYERDOWN.crop(cwidth * 2,0, cwidth, cheight);
-
+        ////////////////////////////////////////////////////
+        grass1 = tiles.crop(width,0,width,height);
+        grass2 = tiles.crop(width,height,width,height);
     }
 }

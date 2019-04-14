@@ -125,7 +125,6 @@ public class Game implements Runnable {
             if (deltaU >= 1) {
                 tick();
                 ticks++;
-
                 deltaU--;
             }
 

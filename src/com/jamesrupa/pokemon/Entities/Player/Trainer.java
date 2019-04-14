@@ -3,12 +3,15 @@ package com.jamesrupa.pokemon.Entities.Player;
 import com.jamesrupa.pokemon.GFX.Assets;
 import com.jamesrupa.pokemon.GFX.PlayerAnimations;
 import com.jamesrupa.pokemon.Launcher.Handler;
+import com.jamesrupa.pokemon.World.Tile;
+import com.jamesrupa.pokemon.World.TileMap;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Trainer extends Player {
 
+    private TileMap map;
     private static final float TRAINER_SPEED = 3.0f;
 
     // ANIMATIONS
@@ -17,9 +20,11 @@ public class Trainer extends Player {
     private PlayerAnimations animLeft;
     private PlayerAnimations animRight;
 
-    public Trainer(Handler handler,float x,float y) {
+    public Trainer(Handler handler, TileMap map, float x, float y) {
         super(handler,x,y,Player.DEFAULT_PLAYER_WIDTH,Player.DEFAULT_PLAYER_HEIGHT);
+        this.map = map;
         speed = TRAINER_SPEED;
+        map.getTile((int) x, (int) y).setTrainer(this);
 
         animDown = new PlayerAnimations(100, Assets.playerDown);
         animUp = new PlayerAnimations(100, Assets.playerUp);
@@ -37,9 +42,21 @@ public class Trainer extends Player {
         move();
     }
 
+    public boolean move() {
+        if (x + xMove >= map.getWidth() || x + xMove < 0 || y + yMove >= map.getHeight() || y + yMove < 0) {
+            return false;
+        }
+        if (map.getTile((int)(x + xMove), (int)(y + yMove)).getTrainer() != null) {
+            return false;
+        }
+        map.getTile((int) x, (int) y).setTrainer(null);
+        x += xMove;
+        y += yMove;
+        map.getTile((int) x, (int) y).setTrainer(this);
+        return true;
+    }
+
     private void getInput() {
-        xMove = 0;
-        yMove = 0;
         int clear = 0;
 
         if(handler.getKeyManager().up || handler.getKeyManager().up1) {

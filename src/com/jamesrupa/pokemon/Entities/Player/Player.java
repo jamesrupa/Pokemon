@@ -18,9 +18,4 @@ public abstract class Player extends Entity {
         yMove = 0;
     }
 
-    public void move() {
-        x += xMove;
-        y += yMove;
-    }
-
 }
