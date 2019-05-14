@@ -3,7 +3,6 @@ package com.jamesrupa.pokemon.Entities.Player;
 import com.jamesrupa.pokemon.GFX.Assets;
 import com.jamesrupa.pokemon.GFX.PlayerAnimations;
 import com.jamesrupa.pokemon.Launcher.Handler;
-import com.jamesrupa.pokemon.World.Tile;
 import com.jamesrupa.pokemon.World.TileMap;
 
 import java.awt.*;
@@ -42,22 +41,10 @@ public class Trainer extends Player {
         move();
     }
 
-    public boolean move() {
-        if (x + xMove >= map.getWidth() || x + xMove < 0 || y + yMove >= map.getHeight() || y + yMove < 0) {
-            return false;
-        }
-        if (map.getTile((int)(x + xMove), (int)(y + yMove)).getTrainer() != null) {
-            return false;
-        }
-        map.getTile((int) x, (int) y).setTrainer(null);
-        x += xMove;
-        y += yMove;
-        map.getTile((int) x, (int) y).setTrainer(this);
-        return true;
-    }
-
     private void getInput() {
         int clear = 0;
+        xMove = 0;
+        yMove = 0;
 
         if(handler.getKeyManager().up || handler.getKeyManager().up1) {
             yMove += -speed;
@@ -85,16 +72,16 @@ public class Trainer extends Player {
     }
 
     private BufferedImage getCurrentAnimationFrame() {
-        if(xMove < 0){
+        if (xMove < 0) {
             return animLeft.getCurrentFrame();
-        } else if(xMove > 0){
+        } else if (xMove > 0) {
             return animRight.getCurrentFrame();
-        } else if(yMove < 0){
+        } else if (yMove < 0) {
             return animUp.getCurrentFrame();
-        } else if (yMove > 0){
+        } else if (yMove > 0) {
             return animDown.getCurrentFrame();
         } else {
-            return Assets.playerStill;
+            return Assets.playerSTILL;
         }
     }
 }

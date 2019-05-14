@@ -10,7 +10,7 @@ public class Assets {
 
     // BUFFERED IMAGE VARIABLES
     public static BufferedImage[] playerUp, playerDown, playerLeft, playerRight;
-    public static BufferedImage playerStill;
+    public static BufferedImage playerSTILL;
     public static BufferedImage grass1, grass2;
 
     public static void init() {
@@ -49,7 +49,7 @@ public class Assets {
         playerRight[2] = PLAYERRIGHT.crop(cwidth * 2 ,0, cwidth, cheight);
         playerRight[3] = PLAYERRIGHT.crop(cwidth * 3, 0, cwidth, cheight);
         ////////////////////////////////////////////////////
-        playerStill = PLAYERDOWN.crop(cwidth * 2,0, cwidth, cheight);
+        playerSTILL = PLAYERDOWN.crop(cwidth * 2, 0, cwidth, cheight);
         ////////////////////////////////////////////////////
         grass1 = tiles.crop(width,0,width,height);
         grass2 = tiles.crop(width,height,width,height);

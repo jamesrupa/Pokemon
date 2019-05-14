@@ -8,13 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ab04d698-d875-47c7-9e70-1983dc5d2ac6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/tilesheets/full-tilesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/textures/tilesheets/full-tilesheet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Trainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Worlds/World.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/SplashScreenState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/SplashScreenState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Tile.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,65 +26,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Tile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#130#131#0" expanded="true" />
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#129#130#0" expanded="true" />
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Trainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2473#2474#0" expanded="true" />
-                <element signature="e#2566#2567#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="336">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Settings.java">
+        <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/Assets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+            <state relative-caret-position="168">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -137,15 +96,16 @@
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/TitleState.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Handler.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Input/KeyManager.java" />
-        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/SplashScreenState.java" />
-        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Terrain.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java" />
-        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Player.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Settings.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/TileMap.java" />
-        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/Assets.java" />
-        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Trainer.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Terrain.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Tile.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/Assets.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Movement.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/SplashScreenState.java" />
+        <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Trainer.java" />
         <option value="$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/GameState.java" />
       </list>
     </option>
@@ -164,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,7 +215,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -266,7 +226,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -314,8 +274,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="717" y="39" width="246" height="972" id="Project" order="0" visible="true" weight="0.16422467" />
+      <window_info content_ui="combo" x="717" y="39" width="246" height="972" id="Project" order="0" visible="true" weight="0.18437119" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -324,7 +285,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32921812" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15226337" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15226337" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23971194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,16 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/DemoState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/PlayerAnimations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
@@ -437,20 +388,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/World.java" />
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/GameCamera.java" />
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Input/Audio.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -468,21 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -516,30 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/SpriteSheet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -563,13 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Terrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/SettingState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -580,10 +472,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/SplashScreenState.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/DemoState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="28" column="91" lean-forward="true" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
+        <state relative-caret-position="420">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -592,17 +484,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2646">
-          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+        <state relative-caret-position="156">
+          <caret line="154" column="25" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3766#3767#0" expanded="true" />
+            <element signature="e#3794#3795#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Trainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/SplashScreenState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Movement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Terrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/TileMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state relative-caret-position="609">
           <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
           <folding>
             <element signature="e#633#634#0" expanded="true" />
@@ -617,55 +614,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/GFX/Assets.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Launcher/Pokemon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/Entities/Player/Trainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2473#2474#0" expanded="true" />
-            <element signature="e#2566#2567#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/World/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamesrupa/pokemon/States/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        <state relative-caret-position="336">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -2,6 +2,8 @@ package com.jamesrupa.pokemon.World;
 
 import com.jamesrupa.pokemon.Entities.Player.Trainer;
 
+import java.awt.*;
+
 public class Tile {
 
     private Terrain terrain;
@@ -9,6 +11,10 @@ public class Tile {
 
     public Tile(Terrain terrain) {
         this.terrain = terrain;
+    }
+
+    public void render(Graphics g) {
+
     }
 
     public Terrain getTerrain() {
