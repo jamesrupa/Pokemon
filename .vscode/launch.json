@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Pokemon",
+            "request": "launch",
+            "mainClass": "com.jamesrupa.pokemon.Launcher.Pokemon",
+            "projectName": "Pokemon"
+        }
+    ]
+}

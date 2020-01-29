@@ -12,7 +12,7 @@ public class TileMap {
 
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
-                if (Math.random() > 0.5d) {
+                if (Math.random() < 0.5d) {
                     tiles[x][y] = new Tile(Terrain.GRASS_1);
                 } else {
                     tiles[x][y] = new Tile(Terrain.GRASS_2);

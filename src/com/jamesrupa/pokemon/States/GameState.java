@@ -10,11 +10,11 @@ import java.awt.*;
 public class GameState extends State {
 
     private Trainer trainer;
-    TileMap map = new TileMap(15,15);
+    TileMap map = new TileMap(100,100);
 
     public GameState(Handler handler) {
         super(handler);
-        trainer = new Trainer(handler,map,10,10);
+        trainer = new Trainer(handler,map,25,25);
 
     }
 
